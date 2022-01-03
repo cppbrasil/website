@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block seo %}
+  {{ super() }}
+
+  {% if config.title %}
+    {% set title = config.title %}
+  {% else %}
+    {% set title = "" %}
+  {% endif %}
+
+  {% if config.extra.title_addition and title %}
+    {% set title_addition = title_separator ~ config.extra.title_addition %}
+  {% elif config.extra.title_addition %}
+    {% set title_addition = config.extra.title_addition %}
+  {% else %}
+    {% set title_addition = "" %}
+  {% endif %}
+
+  {% set description = config.description %}
+
+  {{ macros_head::seo(title=title, title_addition=title_addition, description=description, is_home=true) }}
+{% endblock seo %}
+
+{% block content %}
+<div class="wrap container" role="document">
+  <div class="content">
+    <section class="section container-fluid mt-n3 pb-3">
+      <div class="row justify-content-center">
+        <div class="col-lg-12 text-center">
+          <h1 class="mt-0">{{ section.title | default(value=config.extra.title_addition) }}</h1>
+        </div>
+        <div class="col-lg-9 col-xl-8 text-center">
+          <p class="lead">{{ section.extra.lead | default(value=config.description) | safe }}</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<section class="section section-sm">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      {% if section.extra.list %}
+        {% for val in section.extra.list %}
+        <div class="col-lg-5">
+          <h2 class="h4">{{ val.title }}</h2>
+          <p>{{ val.content | safe }}</p>
+        </div>
+        {% endfor %}
+      {% else %}
+        <div class="col-lg-5">
+          <h2 class="h4"><a href="https://github.com/cppbrasil/material-de-aprendizado">Material de aprendizado</a></h2>
+          <p>Coleção de materiais e links para aprendizado de C e de C++, em português ou inglês.</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4"><a href="https://github.com/tarcisiofischer/livrocpp">O Livro ⚡️</a></h2>
+          <p>Livro de C++ desenvolvido por membros do grupo.</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">Grupos derivados</h2>
+          <p>Grupos correlacionados ao grupo principal do @cppbrazil.</p>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-sm container-fluid">
+  <div class="row justify-content-center text-center">
+    <div class="col-lg-9"></div>
+  </div>
+</section>
+{% endblock content %}
