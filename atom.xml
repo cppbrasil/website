@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt">
+	<title>Cpp Brasil</title>
+	<subtitle>Site dedicado para o grupo do telegram @cppbrazil.</subtitle>
+	<link href="https://example.com/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://example.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-01-03T08:50:45+00:00</updated>
+	<id>https://example.com/atom.xml</id>
+	<entry xml:lang="pt">
+		<title>Patrick Pereira</title>
+		<published>2022-01-03T08:50:45+00:00</published>
+		<updated>2022-01-03T08:50:45+00:00</updated>
+		<link href="https://example.com/authors/patrick/" type="text/html"/>
+		<id>https://example.com/authors/patrick/</id>
+		<content type="html">&lt;p&gt;Random Open Source developer.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;patrickelectric&quot;&gt;@patrickelectric&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="pt">
+		<title>Contribuindo</title>
+		<published>2022-01-03T08:50:45+00:00</published>
+		<updated>2022-01-03T08:50:45+00:00</updated>
+		<link href="https://example.com/blog/202201-contribuindo/" type="text/html"/>
+		<id>https://example.com/blog/202201-contribuindo/</id>
+		<content type="html">&lt;h1 id=&quot;como-funciona&quot;&gt;Como funciona&lt;&#x2F;h1&gt;
+&lt;p&gt;O website do Cpp Brasil é criado utilizando o &lt;a href=&quot;https:&#x2F;&#x2F;www.getzola.org&quot;&gt;Zola&lt;&#x2F;a&gt;, um gerador de sites estaticos.
+Com isso, é possivel escrever posts utilizando markdown com uma estrutura definida estrutura.&lt;&#x2F;p&gt;
+&lt;p&gt;Um exemplo minimo pode ser encontrado no post &lt;a href=&quot;https:&#x2F;&#x2F;example.com&#x2F;blog&#x2F;202201-hello-world&#x2F;&quot;&gt;Hello World&lt;&#x2F;a&gt;, onde o código é definido como:&lt;&#x2F;p&gt;
+&lt;p&gt;{ Utilizar href do github }&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;md&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-md &quot;&gt;&lt;code class=&quot;language-md&quot; data-lang=&quot;md&quot;&gt;&lt;span&gt;+++
+&lt;&#x2F;span&gt;&lt;span&gt;title = &amp;quot;Hello World&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;description = &amp;quot;Primeiro post do blog!&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;date = 2022-01-03T08:50:45+00:00
+&lt;&#x2F;span&gt;&lt;span&gt;draft = false
+&lt;&#x2F;span&gt;&lt;span&gt;template = &amp;quot;blog&#x2F;page.html&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;[taxonomies]
+&lt;&#x2F;span&gt;&lt;span&gt;authors = [&amp;quot;Patrick&amp;quot;]
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;[extra]
+&lt;&#x2F;span&gt;&lt;span&gt;lead = &amp;quot;Este é o nosso primeiro posto do blog &amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;b&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;Cpp Brasil&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;b&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;!&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;+++
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;O primeiro de muitos!
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;O arquivo se encontra dentro da pasta &lt;code&gt;content&#x2F;blog&lt;&#x2F;code&gt;, onde os posts devem ser incluidos.
+Para facilitar a organização, o arquivo tem o seguinte formato de nome: &lt;code&gt;XXXXYY-blog-title.md&lt;&#x2F;code&gt;,
+onde XXXX é o ano e YY o mês.&lt;&#x2F;p&gt;
+&lt;p&gt;Para adicionar informação sobre o autor do blog, basta adicionar um novo arquivo com o nome do autor em &lt;code&gt;content&#x2F;authors&lt;&#x2F;code&gt;,
+utilizando o seguinte template.&lt;&#x2F;p&gt;
+&lt;p&gt;{ Utilizar href do github }&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="pt">
+		<title>Hello World</title>
+		<published>2022-01-03T08:50:45+00:00</published>
+		<updated>2022-01-03T08:50:45+00:00</updated>
+		<link href="https://example.com/blog/202201-hello-world/" type="text/html"/>
+		<id>https://example.com/blog/202201-hello-world/</id>
+		<content type="html">&lt;p&gt;O primeiro de muitos!&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>
