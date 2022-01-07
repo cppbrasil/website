@@ -45,10 +45,8 @@ highlight_code = true
 
 [extra]
 # Put all your custom variables here
-author = "Aaran Xu"
-github = "https://github.com/aaranxu"
-twitter = "https://twitter.com/aaranxu"
-email = "aaranxu@outlook.com"
+github = "https://github.com/cppbrasil"
+telegram = "https://telegram.me/cppbrazil"
 
 # If running on netlify.app site, set to true
 is_netlify = true
